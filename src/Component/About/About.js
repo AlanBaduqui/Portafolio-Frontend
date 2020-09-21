@@ -25,9 +25,11 @@ function About() {
                             <img className="foto-perfil" alt="FotoPerfil" src={information.photo}></img>
                         </div>
                         <div className="Descripcion">
+                            <div>
                             <h1>{information.name}</h1>
                             <h2>{information.profession}</h2>
                             <p>{information.about_me}</p>
+                            </div>
                             <ul className="skills">
                                 {information.skills && information.skills.map((skill, index) =>
                                     <Button size="small" color="primary">
@@ -39,6 +41,7 @@ function About() {
                     </CardContent>
                 </Card>
             </Container>
+            <Button> <p>Hola</p> </Button>
         </div>
     )
 };
